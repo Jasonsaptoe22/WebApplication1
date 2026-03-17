@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KLP", "WebApplication1\KLP.csproj", "{F75CB810-2F5A-4EBC-940E-CD752E933A16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F75CB810-2F5A-4EBC-940E-CD752E933A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75CB810-2F5A-4EBC-940E-CD752E933A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75CB810-2F5A-4EBC-940E-CD752E933A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75CB810-2F5A-4EBC-940E-CD752E933A16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2799A82C-5AF9-4DF6-993F-FB593BFEB88F}
+	EndGlobalSection
+EndGlobal
