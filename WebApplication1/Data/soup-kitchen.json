@@ -1,0 +1,81 @@
+{
+  "title": "Korsten Soup Kitchen",
+  "subtitle": "Serving warm meals with dignity, compassion, and the love of Christ.",
+  "heroImage": "/Images/soup_banner.png",
+  "mission": "Our soup kitchen exists to make sure no one in our community is forgotten. Each meal is a chance to nourish body and spirit, build relationships, and reflect Christ's mercy in practical ways.",
+  "schedule": [
+    "Meal Service: Saturdays, 10:00 AM - 1:00 PM",
+    "Food Prep Team: Fridays, 4:30 PM - 6:00 PM",
+    "Packing & Distribution: Saturdays, 8:30 AM - 9:45 AM"
+  ],
+  "impactStats": [
+    {
+      "label": "Meals Served Monthly",
+      "value": "450+"
+    },
+    {
+      "label": "Active Volunteers",
+      "value": "35"
+    },
+    {
+      "label": "Families Supported",
+      "value": "120+"
+    }
+  ],
+  "gallery": [
+    {
+      "image": "/Images/soup_1.1.jpeg",
+      "title": " ",
+      "description": " ",
+      "layout": "large"
+    },
+    {
+      "image": "/Images/soup_2.jpeg",
+      "title": " ",
+      "description": " ",
+      "layout": "tall"
+    },
+    {
+      "image": "/Images/soup_3.jpeg",
+      "title": " ",
+      "description": " ",
+      "layout": "small"
+    },
+    {
+      "image": "/Images/soup_4.jpeg",
+      "title": " ",
+      "description": " ",
+      "layout": "small"
+    },
+    {
+      "image": "/Images/soup_5.jpeg",
+      "title": " ",
+      "description": " ",
+      "layout": "small"
+    }
+  ],
+  "getInvolved": [
+    {
+      "title": "Serve On The Team",
+      "description": "Join cooking, serving, setup, or cleanup teams once a week or once a month."
+    },
+    {
+      "title": "Donate Groceries",
+      "description": "Contribute rice, soup mix, vegetables, cooking oil, bread, and long-life milk."
+    },
+    {
+      "title": "Support Financially",
+      "description": "Financial gifts help us buy fresh ingredients and keep the ministry sustainable."
+    }
+  ],
+  "donationMethods": [
+    "In-person giving at Sunday service (mark envelope: Soup Kitchen)",
+    "EFT: FNB Bank | Account Number: 63151953065 | Branch Code: 250655 | Reference: SOUPKITCHEN",
+    "Food drop-off: Church office, weekdays 9:00 AM - 3:00 PM"
+  ],
+  "contact": {
+    "name": "Soup Kitchen Coordination Team",
+    "phone": "0794900461",
+    "email": "el.korsten2@gmail.com"
+  }
+}

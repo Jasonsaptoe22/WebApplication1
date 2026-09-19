@@ -1,0 +1,172 @@
+@page
+@model KLP.Pages.SoupKitchenModel
+@{
+    ViewData["Title"] = "Soup Kitchen";
+}
+
+<section class="soup-showcase">
+    <div class="soup-showcase-hero">
+        <img src="@Model.PageContent.HeroImage" alt="Korsten Soup Kitchen" class="soup-hero-image" />
+        <div class="soup-hero-overlay"></div>
+        <div class="soup-showcase-inner">
+            <div class="soup-hero-copy">
+                <span class="soup-kicker">Community Outreach</span>
+                <h1 class="soup-hero-title">Korsten<br />Soup Kitchen</h1>
+                <p class="soup-hero-subtitle">@Model.PageContent.Subtitle</p>
+                <a href="#get-involved" class="soup-hero-cta">Get Involved</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="soup-showcase-panel">
+        <section class="soup-verse-banner" aria-label="Scripture verse">
+            <p class="soup-verse-quote">&ldquo;</p>
+            <p class="soup-verse-text">
+                And all the believers lived in a wonderful harmony, holding everything in common. They sold whatever they owned and <mark>pooled their resources</mark> so that each person's <mark>need</mark> was met.
+            </p>
+            <div class="soup-verse-divider"></div>
+            <p class="soup-verse-reference">Acts 2:43</p>
+        </section>
+
+        <section class="soup-values-row">
+            <article class="soup-value-card">
+                <div class="soup-value-icon">&#9749;</div>
+                <h3>Nourishing Meals</h3>
+                <p>We serve warm, nutritious meals to our neighbors in need.</p>
+            </article>
+            <article class="soup-value-card">
+                <div class="soup-value-icon">&#9825;</div>
+                <h3>Compassionate Care</h3>
+                <p>Everyone is treated with dignity, respect, and love.</p>
+            </article>
+            <article class="soup-value-card">
+                <div class="soup-value-icon">&#128101;</div>
+                <h3>Community First</h3>
+                <p>Together, we build a stronger, more connected community.</p>
+            </article>
+            <article class="soup-value-card">
+                <div class="soup-value-icon">&#10013;</div>
+                <h3>Rooted in Christ</h3>
+                <p>Our mission is guided by faith and the love of Jesus.</p>
+            </article>
+        </section>
+    </div>
+</section>
+
+<div class="soup-page">
+    <section class="soup-photo-showcase">
+        <div class="soup-photo-showcase-header">
+            <span class="soup-photo-label">Gallery</span>
+            <h2 class="soup-section-title">Moments From The Soup Kitchen</h2>
+            <p class="soup-section-note">A visual space for the stories, people, and small acts of care that shape this ministry. Replace these placeholders with your real outreach photos when you're ready.</p>
+        </div>
+
+        <div class="soup-photo-layout">
+            @foreach (var item in Model.PageContent.Gallery)
+            {
+                var layoutClass = item.Layout?.ToLowerInvariant() switch
+                {
+                    "large" => "soup-photo-large",
+                    "tall" => "soup-photo-tall",
+                    _ => "soup-photo-small"
+                };
+
+                if (!string.IsNullOrWhiteSpace(item.Image))
+                {
+                    <article class="soup-photo-frame @layoutClass">
+                        <img src="@item.Image" alt="@item.Title" class="soup-photo-image" />
+                        <div class="soup-photo-frame-caption">
+                            <span>@item.Title</span>
+                            <p>@item.Description</p>
+                        </div>
+                    </article>
+                }
+                else
+                {
+                    <article class="soup-photo-placeholder @layoutClass">
+                        <div class="soup-photo-placeholder-inner">
+                            <span>@item.Title</span>
+                            <p>@item.Description</p>
+                        </div>
+                    </article>
+                }
+            }
+        </div>
+    </section>
+
+    <section id="get-involved" class="soup-involved-section">
+        <div class="soup-involved-header">
+            <div class="soup-involved-emblem">
+                <span></span>
+                <strong>&#9825;</strong>
+                <span></span>
+            </div>
+            <h2 class="soup-section-title">How You Can Get Involved</h2>
+            <p class="soup-involved-intro">Every act of service and generosity helps us serve warm meals and share the love of Christ with our community.</p>
+        </div>
+        <div class="soup-involved-grid">
+            @{
+                var involvementIcons = new[] { "&#128101;", "&#129530;", "&#9825;" };
+            }
+            @for (var i = 0; i < Model.PageContent.GetInvolved.Count; i++)
+            {
+                var item = Model.PageContent.GetInvolved[i];
+                <article class="soup-involved-card">
+                    <div class="soup-involved-icon">@Html.Raw(involvementIcons[Math.Min(i, involvementIcons.Length - 1)])</div>
+                    <h3>@item.Title</h3>
+                    <div class="soup-involved-divider"></div>
+                    <p>@item.Description</p>
+                </article>
+            }
+        </div>
+    </section>
+
+    <section class="soup-donate-section">
+        <div class="soup-donate-card">
+            <div class="soup-donate-heading">
+                <div class="soup-donate-badge">&#9825;</div>
+                <h2>Ways To Donate</h2>
+            </div>
+            <div class="soup-donate-list">
+                @for (var i = 0; i < Model.PageContent.DonationMethods.Count; i++)
+                {
+                    var method = Model.PageContent.DonationMethods[i];
+                    var donationIcon = i switch
+                    {
+                        0 => "&#9962;",
+                        1 => "&#9647;",
+                        _ => "&#128230;"
+                    };
+
+                    <div class="soup-donate-item">
+                        <div class="soup-donate-item-icon">@Html.Raw(donationIcon)</div>
+                        <div class="soup-donate-item-copy">
+                            <p>@method</p>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="soup-donate-footer-mark"></div>
+        </div>
+        <div class="soup-contact-card">
+            <img src="/Images/soup.png" alt="Soup kitchen outreach" class="soup-contact-bg" />
+            <div class="soup-contact-overlay"></div>
+            <div class="soup-contact-content">
+                <div class="soup-contact-heading">
+                    <div class="soup-contact-badge">&#9742;</div>
+                    <h3>Contact For Outreach</h3>
+                </div>
+                <p class="soup-contact-team"><strong>@Model.PageContent.Contact.Name</strong></p>
+                <div class="soup-contact-line">
+                    <span class="soup-contact-line-icon">&#128222;</span>
+                    <p>Phone: @Model.PageContent.Contact.Phone</p>
+                </div>
+                <div class="soup-contact-line">
+                    <span class="soup-contact-line-icon">&#9993;</span>
+                    <p>Email: @Model.PageContent.Contact.Email</p>
+                </div>
+                <a href="mailto:@Model.PageContent.Contact.Email" class="soup-contact-btn">Email Outreach Team</a>
+            </div>
+        </div>
+    </section>
+</div>

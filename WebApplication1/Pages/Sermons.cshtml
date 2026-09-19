@@ -1,0 +1,89 @@
+@page
+@model KLP.Pages.SermonsModel
+@{
+    ViewData["Title"] = "Sermon Archive";
+}
+
+<section class="sermons-hero">
+    <img src="~/Images/sermons.png" alt="Korsten Lutheran Church congregation" class="sermons-hero-image" />
+    <div class="sermons-hero-overlay"></div>
+    <div class="sermons-hero-content">
+        <span class="sermons-eyebrow">Korsten Lutheran Church</span>
+        <h1 class="sermons-hero-title">Sermon Archive</h1>
+        <p class="sermons-hero-subtitle">Revisit recent messages, reflect on Scripture, and stay rooted in the Gospel throughout the week.</p>
+    </div>
+</section>
+
+<div class="sermons-page">
+    <section class="sermons-intro">
+        <div class="section-header">
+            <h2 class="section-title">Recent Messages</h2>
+            <p class="scripture-ref">"Faith comes from hearing the message." Romans 10:17</p>
+        </div>
+
+        <div class="sermons-intro-card">
+            <p>
+                This archive is a simple library of recent teaching themes from our congregation. As audio and video recordings become available, this page can also grow into a full message hub for the church.
+            </p>
+        </div>
+    </section>
+
+    <section class="sermon-archive-grid">
+        @if (Model.Sermons.Any())
+        {
+            foreach (var sermon in Model.Sermons)
+            {
+                <article class="sermon-card">
+                    <div class="sermon-card-meta">
+                        <span class="sermon-date">@sermon.Date.ToString("MMMM d, yyyy")</span>
+                        @if (!string.IsNullOrWhiteSpace(sermon.Series))
+                        {
+                            <span class="sermon-series">@sermon.Series</span>
+                        }
+                    </div>
+                    <h3 class="sermon-title">@sermon.Title</h3>
+                    @if (!string.IsNullOrWhiteSpace(sermon.Speaker))
+                    {
+                        <p class="sermon-speaker">@sermon.Speaker</p>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(sermon.Scripture))
+                    {
+                        <p class="sermon-scripture">@sermon.Scripture</p>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(sermon.Summary))
+                    {
+                        <p class="sermon-summary">@sermon.Summary</p>
+                    }
+                    @if (sermon.Tags.Any())
+                    {
+                        <div class="sermon-tags">
+                            @foreach (var tag in sermon.Tags)
+                            {
+                                <span>@tag</span>
+                            }
+                        </div>
+                    }
+                </article>
+            }
+        }
+        else
+        {
+            <article class="sermon-card sermon-card-empty">
+                <h3 class="sermon-title">No sermons published yet</h3>
+                <p class="sermon-summary">
+                    Add sermon entries to <code>Data/sermons.json</code> and they will appear here automatically.
+                </p>
+            </article>
+        }
+
+        <article class="sermon-card sermon-card-featured">
+            <div class="sermon-library-note">
+                <h3>Building a richer archive</h3>
+                <p>
+                    This page is ready for message notes now, and later it can be extended with downloadable outlines, sermon audio, YouTube links, or filters by speaker and series.
+                </p>
+                <a asp-page="/About" class="sermon-library-link">Learn more about our church</a>
+            </div>
+        </article>
+    </section>
+</div>

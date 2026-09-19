@@ -21,7 +21,7 @@
             <p class="hero-subtitle">A community rooted in faith, hope, and love</p>
             <div class="hero-buttons">
                 <a href="#" class="hero-btn primary">Join Us Sunday</a>
-                <a href="#" class="hero-btn secondary">Learn More</a>
+                <a asp-page="/About" class="hero-btn secondary">Learn More</a>
             </div>
         </div>
     </div>
@@ -31,21 +31,21 @@
             <span class="info-icon">📅</span>
             <div class="info-text">
                 <strong>Sunday Service</strong>
-                <span>10:00 AM</span>
+                <span>9:00 AM</span>
             </div>
         </div>
         <div class="info-item">
             <span class="info-icon">📍</span>
             <div class="info-text">
                 <strong>Visit Us</strong>
-                <span>Port Elizabeth</span>
+                <span>2 Elkana Rd, Korsten</span>
             </div>
         </div>
         <div class="info-item">
             <span class="info-icon">📞</span>
             <div class="info-text">
-                <strong>Contact</strong>
-                <span>Call Today</span>
+                <strong>Email Us</strong>
+                <span>el.korsten2@gmail.com</span>
             </div>
         </div>
     </div>
@@ -63,22 +63,13 @@
             <h3 class="welcome-subtitle">We're glad you're here</h3>
 
             <p class="welcome-text">
-                Jesus was a simple man with a simple plan to make God known.
-                Together, we constantly look at Jesus through God's Word, inspired to
-                become whatever destiny requires so that we can give hope to the
-                many still unfamiliar with God's amazing love. We do this by building a
-                community rooted in the Bible, fostering deep spiritual friendships,
-                and doing good in our community.
+                Welcome to our church family. We are a Christ-centred Lutheran congregation rooted in God’s Word, guided by His grace, and committed to sharing the love of Jesus Christ with all people. Our desire is to be a place where faith grows, hope is renewed, and lives are strengthened through worship, prayer, fellowship, and service.
             </p>
 
-            <p class="welcome-text">
-                We meet in <strong>multiple Sunday service locations</strong> across the Bay Area, and
-                our <strong>small groups</strong> meet throughout the week.
-            </p>
+            
 
             <p class="welcome-text">
-                We hope you will join us in our mission to create a non-traditional, non-denominational,
-                life-changing church.
+                Whether you are visiting for the first time, searching for spiritual direction, or looking for a church to call home, you are warmly invited to join us. Here, there is a place for you to belong, to grow, and to experience God’s love in community.
             </p>
 
             <a href="#" class="welcome-btn">
@@ -89,6 +80,28 @@
     </div>
 </section>
 
+<section class="home-soup-section">
+    <div class="home-soup-shell">
+        <div class="home-soup-copy">
+            <div class="home-soup-icon" aria-hidden="true">☕</div>
+            <p class="home-soup-label">Serving With Love</p>
+            <h2 class="home-soup-title">Our Soup Kitchen Ministry</h2>
+            <div class="home-soup-divider"></div>
+            <p class="home-soup-text">
+                Every meal we serve is an opportunity to share Christ's love and make a difference in our
+                community. We provide warm, nutritious meals to those in need with dignity and compassion.
+            </p>
+            <a asp-page="/SoupKitchen" class="home-soup-button">
+                <span>Learn More</span>
+                <span class="home-soup-button-arrow" aria-hidden="true">→</span>
+            </a>
+        </div>
+
+        <div class="home-soup-image-wrap">
+            <img src="~/Images/soup_home.png" alt="Serving meals through the soup kitchen ministry" class="home-soup-image" />
+        </div>
+    </div>
+</section>
 
 <section class="monthly-schedule-section">
     <h2 class="section-title">Monthly Schedule</h2>
@@ -108,12 +121,12 @@
                     <td class="schedule-speaker-cell">Einat Sharon</td>
                 </tr>
                 <tr class="schedule-row">
-                    <td class="schedule-time-cell">10:00 AM,<br>Sunday</td>
+                    <td class="schedule-time-cell">9:00 AM,<br>Sunday</td>
                     <td class="schedule-session-cell">Sunday Worship Service</td>
                     <td class="schedule-speaker-cell">Pastor Johnson</td>
                 </tr>
                 <tr class="schedule-row">
-                    <td class="schedule-time-cell">11:00 AM,<br>Sunday</td>
+                    <td class="schedule-time-cell">6:30 PM,<br>Wednesday</td>
                     <td class="schedule-session-cell">Adult Bible Study</td>
                     <td class="schedule-speaker-cell">Elder Matthews</td>
                 </tr>
@@ -149,7 +162,7 @@
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Sunday Services</h3>
-                    <p class="card-description">Join us every Sunday at 10:00 AM for inspiring worship, uplifting music, and biblical teaching that speaks to your heart and daily life.</p>
+                    <p class="card-description">Join us every Sunday at 9:00 AM for inspiring worship, uplifting music, and biblical teaching that speaks to your heart and daily life.</p>
                     <a href="#" class="card-button">
                         <span class="button-icon">📅</span>
                         View Service Times
@@ -157,34 +170,34 @@
                 </div>
             </div>
 
-            <!-- Card 2: Small Groups -->
+            <!-- Card 2: Pastoral Consultations -->
             <div class="gallery-card">
                 <div class="card-image-container">
-                    <img src="~/Images/IMG_2.jpeg" alt="Small Groups" class="card-image" />
+                    <img src="~/Images/congregation_3.jpeg" alt="Pastoral Consultations" class="card-image" />
                     <div class="card-overlay"></div>
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Small Groups</h3>
-                    <p class="card-description">Connect with friends at a similar life stage in your neighborhood. Build meaningful relationships through Bible study and fellowship.</p>
+                    <h3 class="card-title">Pastoral Consultations</h3>
+                    <p class="card-description">Meet with the pastor for prayer, spiritual guidance, encouragement, and pastoral care as you navigate life's questions and seasons.</p>
                     <a href="#" class="card-button">
-                        <span class="button-icon">👥</span>
-                        Find a Group
+                        <span class="button-icon">✝️</span>
+                        Learn more
                     </a>
                 </div>
             </div>
 
-            <!-- Card 3: Youth Ministry -->
+            <!-- Card 3: Sunday School -->
             <div class="gallery-card">
                 <div class="card-image-container">
-                    <img src="~/Images/palm.png" alt="Youth Ministry" class="card-image" />
+                    <img src="~/Images/congregation_1.jpeg" alt="Sunday School" class="card-image" />
                     <div class="card-overlay"></div>
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Youth Ministry</h3>
-                    <p class="card-description">Dynamic programs for teens and young adults featuring games, worship, mentorship, and life-changing discussions about faith.</p>
+                    <h3 class="card-title">Sunday School</h3>
+                    <p class="card-description">A joyful space for children to learn Bible stories, grow in faith, sing, pray, and discover God's love in ways that are warm, simple, and age-appropriate.</p>
                     <a href="#" class="card-button">
-                        <span class="button-icon">🎯</span>
-                        Join Youth Group
+                        <span class="button-icon">🌟</span>
+                        Learn more
                     </a>
                 </div>
             </div>
@@ -197,13 +210,14 @@
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Community Outreach</h3>
-                    <p class="card-description">Make a difference in Port Elizabeth through volunteer opportunities, food drives, and community service projects that show God's love.</p>
-                    <a href="#" class="card-button">
+                    <p class="card-description">Make a difference in Gqeberha through volunteer opportunities, food drives, and community service projects that show God's love.</p>
+                    <a asp-page="/SoupKitchen" class="card-button">
                         <span class="button-icon">❤️</span>
                         Get Involved
                     </a>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
@@ -214,13 +228,13 @@
     <div class="events-list">
         <div class="event-card">
             <h3 class="event-title">Sunday Worship Service</h3>
-            <p class="event-time">Every Sunday at 10:00 AM</p>
+            <p class="event-time">Every Sunday at 9:00 AM</p>
             <p class="event-location">Main Sanctuary</p>
         </div>
 
         <div class="event-card">
             <h3 class="event-title">Bible Study</h3>
-            <p class="event-time">Wednesdays at 7:00 PM</p>
+            <p class="event-time">Wednesdays at 6:30 PM</p>
             <p class="event-location">Fellowship Hall</p>
         </div>
 

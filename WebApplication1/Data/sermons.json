@@ -1,0 +1,47 @@
+[
+  {
+    "date": "2026-03-16",
+    "title": "Hope in the Wilderness",
+    "series": "Lent Reflections",
+    "speaker": "Pastor Johnson",
+    "scripture": "Isaiah 43:16-21",
+    "summary": "A reminder that God makes a way even in barren places, calling His people to trust His promise before they see the outcome.",
+    "tags": ["Hope", "Lent", "Faithfulness"]
+  },
+  {
+    "date": "2026-03-09",
+    "title": "When Grace Meets Doubt",
+    "series": "Walking With Christ",
+    "speaker": "Elder Matthews",
+    "scripture": "John 20:24-29",
+    "summary": "Jesus meets honest questions with mercy, inviting us to bring our uncertainty into His presence rather than hiding it.",
+    "tags": ["Grace", "Discipleship", "Trust"]
+  },
+  {
+    "date": "2026-03-02",
+    "title": "Blessed Are the Peacemakers",
+    "series": "Kingdom Living",
+    "speaker": "Youth Pastor Davis",
+    "scripture": "Matthew 5:9",
+    "summary": "Christ forms a people who bring peace into homes, neighborhoods, and strained relationships through humility and courage.",
+    "tags": ["Peace", "Community", "Beatitudes"]
+  },
+  {
+    "date": "2026-02-23",
+    "title": "The Shepherd Who Stays",
+    "series": "Psalms for the Journey",
+    "speaker": "Pastor Johnson",
+    "scripture": "Psalm 23",
+    "summary": "Even in dark valleys, the Lord remains near, guiding, restoring, and preparing a table of grace for His people.",
+    "tags": ["Comfort", "Psalm 23", "Presence"]
+  },
+  {
+    "date": "2026-02-16",
+    "title": "Serving One Another in Love",
+    "series": "Church Alive",
+    "speaker": "Sister Williams",
+    "scripture": "Galatians 5:13-14",
+    "summary": "The freedom we have in Christ is expressed not in self-interest, but in joyful service that reflects His love to others.",
+    "tags": ["Service", "Love", "Church Life"]
+  }
+]

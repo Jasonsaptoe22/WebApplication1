@@ -4,83 +4,206 @@
     ViewData["Title"] = "About";
 }
 <div class="about-hero-banner">
-    <img src="~/Images/About-page.png" alt="About Banner" class="about-banner-img" />
+    <img src="~/Images/about-gpt1.png" alt="About Banner" class="about-banner-img" />
     <div class="about-hero-overlay"></div>
     <div class="about-hero-content">
-        <h1 class="about-hero-title">About Us</h1>
-        <p class="about-hero-subtitle">Discover our faith, values, and mission as we walk together in Christ</p>
+@*         <span class="about-hero-kicker">Korsten Lutheran Church</span>
+ *@        <h1 class="about-hero-title">About Us</h1>
+        <p class="about-hero-subtitle">Rooted in the Lutheran tradition, centered on Christ, and gathered around God's Word and Sacraments</p>
+        <div class="about-hero-pillars">
+            <span>Grace</span>
+            <span>Scripture</span>
+            <span>Worship</span>
+            <span>Service</span>
+        </div>
     </div>
 </div>
 
 <div class="about-main-content">
-    <!-- Values Section -->
+    <section class="about-intro-section">
+        <div class="about-intro-shell">
+            <div class="about-intro-card">
+                <span class="about-section-label">Who We Are</span>
+                <p class="about-intro-lead">
+                    We are a Christian congregation in the Lutheran tradition. The good news of Jesus Christ stands at the center of our life together: we are saved by God's grace, received through faith, and sent to love and serve our neighbor.
+                </p>
+                <p class="about-intro-text">
+                    Historic Lutheran teaching is deeply rooted in Scripture, shaped by the Reformation's recovery of the Gospel, and lived out through worship, discipleship, mercy, and witness. Our desire is to be a church where Christ is proclaimed clearly, people are welcomed warmly, and faith is formed for everyday life.
+                </p>
+            </div>
+
+            <aside class="about-intro-visual">
+                <div class="about-visual-card about-visual-card-primary">
+                    <img src="~/Images/church_photo.jpg" alt="Korsten Lutheran Church community" class="about-visual-image" />
+                </div>
+            </aside>
+        </div>
+    </section>
+
     <section class="values-section">
-        <div class="section-header">
-            <h2 class="section-title">Our Values</h2>
-            <p class="scripture-ref">Acts 2:42–47</p>
+        <div class="values-heading-shell">
+            <div class="section-header values-header">
+                <h2 class="section-title">What It Means To Be Lutheran</h2>
+                <div class="values-heading-emblem">
+                    <span></span>
+                    <strong>&#9829;</strong>
+                    <span></span>
+                </div>
+                <p class="scripture-ref">Four core convictions that shape our faith and life together.</p>
+            </div>
+
+            <aside class="values-note-card">
+                <div class="values-note-cross">&#10013;</div>
+                <p>Scripture alone. Grace alone. Faith alone. Christ at the center.</p>
+            </aside>
         </div>
 
         <div class="values-grid">
             <div class="value-card">
-                <div class="value-number">1</div>
-                <h3 class="value-title">Grounded in God's Word</h3>
-                <p class="value-description">
-                    We believe the Bible is the inspired Word of God and the foundation for all we believe and do. In hearing, studying, and teaching the Scriptures, we grow in our relationship with God and learn how to live faithfully in the world.
-                    <em>(Psalm 119:105, 2 Timothy 3:16)</em>
-                </p>
+                <div class="value-card-image value-card-image-scripture">
+                    <img src="~/Images/scriptura.png" alt="Scripture Alone" class="value-card-photo" />
+                </div>
+                <div class="value-card-content">
+                    <div class="value-number">1</div>
+                    <div class="value-icon">&#128214;</div>
+                    <h3 class="value-title">Scripture Alone (Sola Scriptura)</h3>
+                    <p class="value-description">
+                        The Bible is the highest authority for faith and life. Church teachings, traditions, and decisions are measured against God's Word.
+                        <em>(2 Timothy 3:16-17, Psalm 119:105)</em>
+                    </p>
+                </div>
             </div>
 
             <div class="value-card">
-                <div class="value-number">2</div>
-                <h3 class="value-title">Saved by Grace, Through Faith</h3>
-                <p class="value-description">
-                    We believe we are saved not by anything we do, but purely by God's grace through faith in Jesus Christ. This is the heart of the Gospel and the foundation of the Lutheran faith.
-                    <em>(Ephesians 2:8–9, Romans 3:22–24)</em>
-                </p>
+                <div class="value-card-image value-card-image-grace">
+                    <img src="~/Images/gratia (2).png" alt="Grace Alone" class="value-card-photo" />
+                </div>
+                <div class="value-card-content">
+                    <div class="value-number">2</div>
+                    <div class="value-icon">&#10022;</div>
+                    <h3 class="value-title">Grace Alone (Sola Gratia)</h3>
+                    <p class="value-description">
+                        Salvation is a gift from God's grace. It is not something we earn through good works or personal merit.
+                        <em>(Ephesians 2:8-9, Titus 3:5)</em>
+                    </p>
+                </div>
             </div>
 
             <div class="value-card">
-                <div class="value-number">3</div>
-                <h3 class="value-title">Empowered by the Holy Spirit</h3>
-                <p class="value-description">
-                    The Holy Spirit calls, gathers, enlightens, and sanctifies us. He equips us to follow Jesus daily, serve others, and bear witness to God's love in our lives.
-                    <em>(Galatians 5:22–23, John 14:26)</em>
-                </p>
+                <div class="value-card-image value-card-image-faith">
+                    <img src="~/Images/faith.png" alt="Faith Alone" class="value-card-photo" />
+                </div>
+                <div class="value-card-content">
+                    <div class="value-number">3</div>
+                    <div class="value-icon">&#9825;</div>
+                    <h3 class="value-title">Faith Alone (Sola Fide)</h3>
+                    <p class="value-description">
+                        We are made right with God through faith in Jesus Christ, not by our own achievements, but by trusting in Him.
+                        <em>(Romans 3:28, Galatians 2:16)</em>
+                    </p>
+                </div>
             </div>
 
             <div class="value-card">
-                <div class="value-number">4</div>
-                <h3 class="value-title">Living in Community</h3>
-                <p class="value-description">
-                    We were never meant to walk this life alone. We are called into Christian community to worship together, encourage one another, and serve side by side.
-                    <em>(Hebrews 10:24–25, Acts 2:44–47)</em>
-                </p>
-            </div>
-
-            <div class="value-card">
-                <div class="value-number">5</div>
-                <h3 class="value-title">Called to Mission</h3>
-                <p class="value-description">
-                    Jesus sends us out to be His hands and feet in the world. We seek to live as everyday missionaries — in our homes, workplaces, and neighborhoods — making disciples of all nations.
-                    <em>(Matthew 28:19–20, 2 Corinthians 5:20)</em>
-                </p>
+                <div class="value-card-image value-card-image-christ">
+                    <img src="~/Images/christ.png" alt="Christ-Centered Faith" class="value-card-photo" />
+                </div>
+                <div class="value-card-content">
+                    <div class="value-number">4</div>
+                    <div class="value-icon">&#10013;</div>
+                    <h3 class="value-title">Christ-Centered Faith</h3>
+                    <p class="value-description">
+                        Jesus Christ is at the heart of everything: worship, teaching, forgiveness, hope, and eternal life.
+                        <em>(John 14:6, Colossians 1:15-20)</em>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sacraments Section -->
+    <section class="lutheran-roots-section">
+        <div class="section-header">
+            <h2 class="section-title">Our Roots In The Reformation</h2>
+            <p class="scripture-ref">A living, daring confidence in God's grace</p>
+        </div>
+
+        <div class="roots-grid">
+            <article class="root-card">
+                <span class="root-year">1517</span>
+                <h3 class="root-title">The Reformation Begins</h3>
+                <p class="root-description">
+                    In the 1500s, the Church in Europe faced many challenges. Martin Luther called for renewal by returning to the Bible and the message of God's grace. His actions helped spark the Reformation, a movement that reshaped Christianity.
+                </p>
+            </article>
+
+            <article class="root-card">
+                <span class="root-year">1580</span>
+                <h3 class="root-title">What Lutherans Believe</h3>
+                <p class="root-description">
+                    Lutherans believe that salvation is God's gift of grace, received through faith in Jesus Christ. The Bible is central, Christ is at the heart of faith, and worship is grounded in God's Word, Baptism, and Holy Communion.
+                </p>
+            </article>
+
+            <article class="root-card">
+                <span class="root-year">Today</span>
+                <h3 class="root-title">A Living Faith Today</h3>
+                <p class="root-description">
+                    From the Reformation to today, Lutheran churches around the world continue to share the Gospel, serve their communities, and grow in faith. The Lutheran Church remains rooted in truth, grace, and love for all people.
+                </p>
+            </article>
+        </div>
+
+        <section class="congregation-section">
+            <div class="section-header congregation-header">
+                <h2 class="section-title">Our Congregation</h2>
+                <p class="scripture-ref">A place for the people and moments that shape our church family.</p>
+            </div>
+
+            <div class="congregation-grid">
+                <article class="congregation-photo-card">
+                    <img src="~/Images/congregation_1.jpeg" alt="Our congregation photo 1" class="congregation-photo" />
+                </article>
+                <article class="congregation-photo-card">
+                    <img src="~/Images/congregation_2.jpeg" alt="Our congregation photo 2" class="congregation-photo" />
+                </article>
+                <article class="congregation-photo-card">
+                    <img src="~/Images/congregation_3.jpeg" alt="Our congregation photo 3" class="congregation-photo" />
+                </article>
+                <article class="congregation-photo-card">
+                    <img src="~/Images/congregation_4.jpeg" alt="Our congregation photo 4" class="congregation-photo" />
+                </article>
+                <article class="congregation-photo-card">
+                    <img src="~/Images/congregation_5.jpeg" alt="Our congregation photo 5" class="congregation-photo" />
+                </article>
+                <article class="congregation-photo-card">
+                    <img src="~/Images/congregation_6.jpeg" alt="Our congregation photo 6" class="congregation-photo" />
+                </article>
+            </div>
+        </section>
+    </section>
+
     <section class="sacraments-section">
         <div class="section-header">
-            <h2 class="section-title">Baptism & Holy Communion</h2>
+            <h2 class="section-title">Word, Baptism & Holy Communion</h2>
+            <p class="scripture-ref">Gathered around the means of grace</p>
         </div>
 
         <div class="sacraments-grid">
             <div class="sacrament-card">
-                <div class="sacrament-icon">💧</div>
-                <h3 class="sacrament-title">Baptism</h3>
+                <div class="sacrament-icon">📖</div>
+                <h3 class="sacrament-title">God's Word</h3>
                 <p class="sacrament-description">
-                    Baptism is a sacred act in which God claims us as His own. In baptism, whether as infants or adults, we are united with Christ, adopted into God's family, and marked with the cross of Christ forever.
-                    <em>(Romans 6:3–4, Titus 3:5–7)</em>
+                    Scripture is read, preached, taught, sung, and prayed because God speaks through His Word. Lutheran worship is shaped by hearing the Gospel clearly and letting that promise form our faith, repentance, and hope.
+                    <em>(Isaiah 55:10-11, Romans 10:17)</em>
+                </p>
+            </div>
+
+            <div class="sacrament-card">
+                <div class="sacrament-icon">💧</div>
+                <h3 class="sacrament-title">Holy Baptism</h3>
+                <p class="sacrament-description">
+                    In Baptism, God joins us to Christ, gives the promise of forgiveness and new life, and welcomes us into the fellowship of the church. Lutheran Christians see Baptism not as a human achievement, but as God's gracious action toward us.
+                    <em>(Romans 6:3-4, Titus 3:5-7)</em>
                 </p>
             </div>
 
@@ -88,10 +211,11 @@
                 <div class="sacrament-icon">🍞</div>
                 <h3 class="sacrament-title">Holy Communion</h3>
                 <p class="sacrament-description">
-                    In Holy Communion, we receive the true body and blood of Christ in, with, and under the bread and wine for the forgiveness of sins. All baptized believers who trust in Christ's promise are welcome to the table.
-                    <em>(Luke 22:19–20, 1 Corinthians 11:23–26)</em>
+                    At the Lord's Table, Christians receive Christ's gift with thanksgiving and faith. Holy Communion is not merely a memorial but a sacred sharing in Christ's promise, given to strengthen His people in forgiveness, unity, and love.
+                    <em>(Luke 22:19-20, 1 Corinthians 10:16-17)</em>
                 </p>
             </div>
         </div>
     </section>
+
 </div>
